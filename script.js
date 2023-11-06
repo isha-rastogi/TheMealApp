@@ -201,4 +201,4 @@ function showDetails(id){
 }
 
 //adding event listener for submit button
-submit.addEventListener("submit", searchMeal) 
+submit.addEventListener("submit", searchMeal(event)) 
