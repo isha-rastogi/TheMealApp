@@ -24,7 +24,8 @@ function isPresent(favMeals, id){
 }
 
 // function to search meal
-function searchMeal() {
+function searchMeal(event) {
+    event.preventDefault();
     if (search.value == "") {
         //search random meal
         fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
