@@ -1,0 +1,195 @@
+/* body */
+body{
+    background: burlywood;
+    color: black;
+    font-family: cursive;
+    margin: 0;
+    width: 100%;
+}
+/* heading tags */
+h1{
+    margin: 20px;
+}
+
+/* extra properties */
+.color-brown-font-600{
+    color:brown;
+    font-weight: 600;
+}
+
+.font-wt-600{
+    font-weight: 600;
+}
+
+.font-wt-400{
+    font-weight: 400;
+}
+
+/* nav bar  */
+.navbar{
+    width: 100%;
+}
+
+.topnav-right{
+    background: gray;
+    margin-left: auto;
+    margin-right: 35px;
+}
+
+/* container */
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+
+/* form */
+form{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input{
+    font-family: cursive;
+}
+
+/* search bar and button */
+#search{
+    width: 500px;
+    height: 40px;
+    margin: 0;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+#searchButton{
+    width: 35px;
+    height: 40px;
+    margin: 0;
+    font-size: 20px;
+    border: 1px;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+  
+}
+
+/* meals div */
+.meals{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+/* individual meal */
+.meal{
+    border: 2px solid white;
+    width: 250px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.meal img{
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+}
+
+.meal-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* meal name */
+.meal-body p{
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+/* icon related */
+/* fav button class */
+.fa-regular{
+    font-size: x-large;
+    color: red;
+}
+
+/* info class */
+.fa{
+    font-size: x-large;
+}
+
+/* home icon */
+.fa-home{
+    font-size: x-large;
+    color: gray;
+    margin-left: 5px;;
+}
+
+
+/* mealInfo div */
+.mealInfo{
+    min-width: 300px;
+    min-height: 300px;
+    width: 80%;
+}
+
+.mealInfo .card{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+li{
+    text-align: left;
+}
+
+/* favourite meal list */
+.offcanvas{
+    background: burlywood;
+}
+
+.favList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favList .card{
+    margin-bottom: 20px;
+}
+
+/* media query */
+@media screen and (max-width:1050px){
+    .meals{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+       
+    }
+}
+@media screen and (max-width:700px){
+   
+    .meals{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+       
+    }
+}
+
+/****END****/
