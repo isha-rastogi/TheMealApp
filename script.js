@@ -24,8 +24,7 @@ function isPresent(favMeals, id){
 }
 
 // function to search meal
-function searchMeal(event) {
-    event.preventDefault();
+function searchMeal() {
     if (search.value == "") {
         //search random meal
         fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
@@ -201,4 +200,4 @@ function showDetails(id){
 }
 
 //adding event listener for submit button
-submit.addEventListener("submit", searchMeal(event)) 
+submit.addEventListener("submit", searchMeal) 
